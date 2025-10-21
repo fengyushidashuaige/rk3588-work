@@ -19,10 +19,10 @@ TARGETS = hello_arm uart_test_arm
 # 默认目标：编译所有
 all: $(TARGETS)
 
-uart6_sender_test: uart6_sender_test.c
+uart6_sender_test: $(SRC_DIR)/uart6_sender_test.c
 	$(CC) $(CFLAGS) -o $@ $<
 
-uart6_interrupt_test: uart6_interrupt_test.c uart6_interrupt_system.c
+uart6_interrupt_test: $(SRC_DIR)/uart6_interrupt_test.c uart6_interrupt_system.c
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 # 编译hello_arm
 hello_arm: $(SRC_DIR)/hello.c
