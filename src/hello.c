@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
-
+#test
 int main() {
     printf("=== AIO-3588L Cross Compile Test ===\n");
     printf("Program compiled on: %s\n", __DATE__);
